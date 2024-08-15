@@ -57,7 +57,8 @@ class Logic(QMainWindow, Ui_MainWindow):
         self.id_list.append(user_id)
 
         self.notification_label.setText('Vote submitted')
-        self.notification_label.setStyleSheet("")
+        self.notification_label.setStyleSheet("color: green;")
+        # self.notification_label.setStyleSheet("")
         self.voting_results_button.setDisabled(False)
 
     def id_valid(self, id: str) -> bool:
