@@ -9,6 +9,7 @@ class Logic(QMainWindow, Ui_MainWindow):
         """
         super().__init__()
         self.setupUi(self)
+        self.setFixedSize(617, 600)
         self.jane_votes = 0
         self.john_votes = 0
         self.id_list = []
