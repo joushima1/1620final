@@ -44,8 +44,6 @@ class Logic(QMainWindow, Ui_MainWindow):
             self.notification_label.setStyleSheet("color: red;")
             return
 
-        # self.id_list.append(user_id)
-
         if self.john_rad_button.isChecked():
             self.john_votes += 1
         elif self.jane_rad_button.isChecked():
@@ -59,7 +57,6 @@ class Logic(QMainWindow, Ui_MainWindow):
 
         self.notification_label.setText('Vote submitted')
         self.notification_label.setStyleSheet("color: green;")
-        # self.notification_label.setStyleSheet("")
         self.voting_results_button.setDisabled(False)
 
     def id_valid(self, id: str) -> bool:
